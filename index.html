@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    h1{
+        display: flex;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        font-size: 45px;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+    .form-container{
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form input{
+        width: 500px;
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px 0px;
+        border-radius: 8px;
+        border: none;
+        border: 1px solid gray;
+    }
+
+    #submit-btn{
+        width: 200px;
+        background-color: rgb(30, 32, 32);
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+
+    }
+
+</style>
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+        <form action="#" method="post">
+            <input type="text" name="fullname" placeholder="Enter Your Name">
+            <input type="email" name="email" placeholder="Enter Your email">
+            <input type="tel" name="phone" placeholder="Enter Your phone number">
+            <input type="password" name="password" placeholder="Enter Your password">
+            <input type="submit" name="submit" value="Submit" id="submit-btn">
+
+
+        </form>
+    </div>
+</body>
+</html>
