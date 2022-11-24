@@ -43,16 +43,14 @@ const user_Schema1 = new mongoose.Schema({
 const users_collection1 = mongoose.model('user_collection1' , user_Schema1);
 
 
-
-
 // mongoose.connect('mongodb://localhost:27017/myuserdata')
-// .then(()=>{console.log("mongoose coonnection successful")})
+// .then(()=>{console.log("mongoose coonnection successful"
 // .catch((err)=>{console.log(err)})
 
 
 const monngodb_url = "mongodb+srv://root:root@cluster0.h31lqor.mongodb.net/mydata"
 // or
-// mongodb+srv://nikita:nikita@cluster0.h31lqor.mongodb.net/authDB
+// const monngodb_url = "mongodb+srv://nikita:nikita@cluster0.h31lqor.mongodb.net/authDB"
 mongoose.connect(monngodb_url, {useNewUrlParser: true,useUnifiedTopology: true}).then(()=>{
     console.log("mongodb is connected");
 }).catch((error)=>{
